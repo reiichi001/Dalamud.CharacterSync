@@ -38,7 +38,7 @@ namespace Dalamud.CharacterSync.Interface
             if (ImGui.Button("Set save data to current character"))
             {
                 Service.Configuration.Cid = Service.ClientState.LocalContentId;
-                Service.Configuration.SetName = $"{Service.ClientState.LocalPlayer.Name} on {Service.ClientState.LocalPlayer.HomeWorld.GameData.Name}";
+                Service.Configuration.SetName = $"{Service.ClientState.LocalPlayer.Name} on {Service.ClientState.LocalPlayer.HomeWorld.Value.Name}";
                 Service.Configuration.Save();
                 CharacterSyncPlugin.PluginLog.Info("CS saved.");
             }
@@ -55,7 +55,7 @@ namespace Dalamud.CharacterSync.Interface
 
             ImGui.Dummy(new Vector2(5, 5));
 
-            ImGui.Text($"The logged in character is {Service.ClientState.LocalPlayer.Name} on {Service.ClientState.LocalPlayer.HomeWorld.GameData.Name}(FFXIV_CHR{Service.ClientState.LocalContentId:X16})");
+            ImGui.Text($"The logged in character is {Service.ClientState.LocalPlayer.Name} on {Service.ClientState.LocalPlayer.HomeWorld.Value.Name}(FFXIV_CHR{Service.ClientState.LocalContentId:X16})");
 
             ImGui.Dummy(new Vector2(20, 20));
 

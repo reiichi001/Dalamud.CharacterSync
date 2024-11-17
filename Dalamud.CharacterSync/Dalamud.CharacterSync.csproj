@@ -1,18 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Dalamud.NET.Sdk/11.0.0">
   <PropertyGroup Label="Target">
-    <TargetFramework>net8.0-windows</TargetFramework>
     <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>9.0</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <AssemblyVersion>2.0.0.10</AssemblyVersion>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+	<AssemblyVersion>2.0.0.11</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Label="Documentation">
@@ -26,16 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.333">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
-  <PropertyGroup>
-    <DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
-  </PropertyGroup>
 
   <PropertyGroup>
     <AssemblySearchPaths>
@@ -46,15 +30,5 @@
 
   <ItemGroup>
     <AdditionalFiles Include="stylecop.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="DalamudPackager" Version="2.1.13" />
-    <Reference Include="Dalamud" Private="False" />
-    <Reference Include="ImGui.NET" Private="False" />
-    <Reference Include="ImGuiScene" Private="False" />
-    <Reference Include="Lumina" Private="False" />
-    <Reference Include="Lumina.Excel" Private="False" />
-    <Reference Include="Newtonsoft.Json" Private="False" />
   </ItemGroup>
 </Project>
