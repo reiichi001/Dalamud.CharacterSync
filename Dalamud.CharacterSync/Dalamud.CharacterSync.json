@@ -1,5 +1,5 @@
 {
-  "Author": "goat",
+  "Author": "goat, bumped by Franz",
   "Name": "Character Data Sync",
   "Punchline": "Sync your character data from your main character to all others",
   "Description": "This plugin allows you to use your character data from your main character on all others.\n\nIn-game, use the configuration menu to choose your main character, the restart the game to start syncing!",
