@@ -29,6 +29,12 @@ namespace Dalamud.CharacterSync
         internal static IDalamudPluginInterface Interface { get; private set; } = null!;
 
         /// <summary>
+        /// Gets the Dalamud framework service.
+        /// </summary>
+        [PluginService]
+        internal static IFramework Framework { get; private set; } = null!;
+
+        /// <summary>
         /// Gets the Dalamud client state.
         /// </summary>
         [PluginService]
