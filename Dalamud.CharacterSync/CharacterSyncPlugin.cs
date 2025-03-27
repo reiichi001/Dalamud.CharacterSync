@@ -64,7 +64,7 @@ namespace Dalamud.CharacterSync
                 PluginLog.Warning("Installer, safe mode...");
                 this.isSafeMode = true;
             }
-            else if (Service.ClientState.LocalPlayer != null)
+            else if (Service.ClientState.IsLoggedIn)
             {
                 PluginLog.Warning("Boot while logged in, safe mode...");
                 this.isSafeMode = true;
