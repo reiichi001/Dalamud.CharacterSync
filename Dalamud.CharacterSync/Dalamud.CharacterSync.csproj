@@ -1,6 +1,5 @@
-﻿<Project Sdk="Dalamud.NET.Sdk/12.0.1">
+﻿<Project Sdk="Dalamud.NET.Sdk/12.0.2">
   <PropertyGroup Label="Target">
-    <PlatformTarget>x64</PlatformTarget>
 	<AssemblyVersion>2.0.0.12</AssemblyVersion>
   </PropertyGroup>
 
