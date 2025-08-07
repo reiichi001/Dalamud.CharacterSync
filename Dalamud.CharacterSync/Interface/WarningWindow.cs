@@ -2,8 +2,8 @@
 using System.IO;
 using System.Numerics;
 
+using Dalamud.Bindings.ImGui;
 using Dalamud.Interface.Windowing;
-using ImGuiNET;
 
 namespace Dalamud.CharacterSync.Interface
 {
